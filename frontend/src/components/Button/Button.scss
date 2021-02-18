@@ -1,0 +1,109 @@
+@import "../../sass/variables";
+@import "../../sass/breakpoints";
+
+.Button {
+  background-color: $primary;
+  color: $headline;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  padding: 0.5rem 2rem;
+  height: fit-content;
+  transition: 0.3s ease;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.Button.TeamCard {
+  transition: 0.3s ease;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.Button.Reset {
+  padding: 0.5rem 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1.5;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.Button.Leave {
+  padding: 0.5rem 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.Button.Clue {
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+}
+
+button:active,
+button:hover,
+button:focus {
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  background-color: $primaryDark;
+}
+
+@include media("<=desktop") {
+  .Button {
+    font-size: 0.8rem;
+  }
+
+  .Button.Leave, .Button.Reset {
+    font-size: 0.8rem;
+  }
+
+  .Button.TeamCard {
+    font-size: 0.7rem;
+  }
+
+  .Button.Clue {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+}
+
+@include media("<=collapse") {
+  .Button.Reset {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .Button.Leave {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .Button.TeamCard {
+    padding: 0.125rem 0.25rem;
+    font-size: 0.7rem;
+  }
+
+}
+
+@include media("<=phone") {
+  .Button,
+  .Button.Reset,
+  .Button.Leave {
+    font-size: 0.8rem;
+  }
+
+  .Button.TeamCard {
+    font-size: 0.5rem;
+  }
+
+  .Button.Clue {
+    font-size: 0.8rem;
+  }
+}
