@@ -7,7 +7,7 @@ We made a clone of this board game using Spring Boot and React.js.
 
 ## Installation
 
-You can run the backend server on the IDE (Intellij, Eclipse; etc.). To install the dependencies required for the backend server (make sure that you have Maven): 
+You can run the backend server on the IDE (Intellij, Eclipse; etc.). To install the dependencies required for the backend server (make sure that you have Maven), go to backend/CodeNames and run: 
 
 ```bash
 mvn clean install
@@ -15,7 +15,7 @@ mvn clean install
 
 To run the frontend, make sure you have Node.js and npm is installed. [https://nodejs.org/](https://nodejs.org/)
 
-Then you can install the dependencies with:
+To install dependencies required for the frontend, go to /frontend and run:
 
 ```bash
 npm install
